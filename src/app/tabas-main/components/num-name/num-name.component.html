@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col">
+    <span class="f-32">
+      Numbers names
+    </span>
+  </div>
+</div>
+<div class="row pb-32">
+  <div class="col">
+    <i class="f-16">Code in: src/app/tabas-main/components/num-name/</i>
+  </div>
+</div>
+<div class="row pt-32">
+  <div class="col">
+    <label for="" class="default-label">Set a number</label>
+    <input type="text" [(ngModel)]="numNameInputValue" class="tabas-field">
+  </div>
+  <div class="col-3">
+    <button class="btn btn-finale" (click)="toWords(numNameInputValue)">CLICK</button>
+  </div>
+</div>
+<div class="row pt-32 pl-24" *ngIf="numName">
+  <div class="col">
+    <span class="f-24">Result: {{numName}}</span>
+  </div>
+</div>

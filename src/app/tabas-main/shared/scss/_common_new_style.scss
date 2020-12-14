@@ -1,0 +1,96 @@
+.ori-container {
+    padding: 24px;
+}
+
+.btn-default-ri {
+    background: #212529 0% 0% no-repeat padding-box;
+    color: $default-white;
+    border-radius: 28px;
+    opacity: 1;
+    top: 550px;
+    left: 30px;
+    width: 217px;
+    height: 56px;
+}
+
+.btn-default-ri:disabled {
+    height: 56px;
+    width: 217px;
+    background-color: rgba(33, 37, 41, 0.3);
+    color: $default-white;
+    border: none;
+    touch-action: none;
+    border-radius: 50px;
+}
+
+.btn-default-ri:disabled:hover {
+    height: 56px;
+    width: 217px;
+    background-color: rgba(33, 37, 41, 0.3);
+    color: $default-white;
+    border: none;
+    touch-action: none;
+    border-radius: 50px;
+}
+
+.btn-default-ri:hover {
+    height: 56px;
+    width: 217px;
+    background-color: transparent;
+    color: $default-black;
+    border-radius: 50px;
+    border: solid 4px $default-black;
+}
+
+.btn-light-ri {
+    border: 4px solid $default-black;
+    background: transparent;
+    color: $default-black;
+    border-radius: 28px;
+    opacity: 1;
+    top: 550px;
+    left: 30px;
+    min-width: 250px;
+    height: 56px;
+    white-space: nowrap;
+}
+
+.btn-light-ri:disabled {
+    height: 56px;
+    width: 217px;
+    background-color: rgba(33, 37, 41, 0.3);
+    color: $default-white;
+    border: none;
+    touch-action: none;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.btn-light-ri:disabled:hover {
+    height: 56px;
+    width: 217px;
+    background-color: rgba(33, 37, 41, 0.3);
+    color: $default-white;
+    border: none;
+    touch-action: none;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.btn-light-ri:hover {
+    height: 56px;
+    width: 217px;
+    background: $default-black 0% 0% no-repeat padding-box;
+    color: $default-white;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.rounded-ri {
+    border-radius: 50%;
+}
+
+.border-4 {
+    border: 4px solid $default-black;
+    ;
+}

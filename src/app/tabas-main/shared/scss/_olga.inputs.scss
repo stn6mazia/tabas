@@ -1,0 +1,500 @@
+.olga-text-input {
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+.olga-textarea-input {
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.select-point {
+    cursor: pointer !important
+}
+
+.olga-select-input {
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center !important;
+        background-position-x: 35% !important;
+    }
+}
+
+.olga-select-input:focus {
+    border: 1px solid #212529;
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.olga-text-input:focus {
+    border: 1px solid #212529 !important;
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+.olga-textarea-input:focus {
+    border: 1px solid #212529 !important;
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.olga-select-inpu-label {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 25%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.olga-input:focus {
+    font-size: 16px !important;
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.olga-input:disabled {
+    border-radius: 28px;
+    opacity: 50% !important;
+    font-style: italic;
+    touch-action: none;
+    // color: #9A9A9A;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.olga-invalid-input {
+    border: 1px solid #F6CB02;
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.olga-invalid-input~.olga-label {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.olga-invalid-textarea {
+    border: 1px solid #F6CB02;
+    top: 419px;
+    left: 220px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    opacity: 1;
+    padding: 20px 24px 20px 24px;
+    .input-bg {
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+}
+
+.olga-invalid-textarea~.olga-label {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.olga-wrong-input {
+    margin-left: 24px;
+    margin-top: 8px;
+    color: #F9CA07;
+}
+
+.input-bg {
+    background-position-y: center;
+    background-position-x: 95%;
+}
+
+.input-bg:focus {
+    background-position-y: center;
+    background-position-x: 95%;
+}
+
+
+/* form starting stylings ------------------------------- */
+
+.olga-group {
+    position: relative;
+    margin-top: 16px;
+}
+
+.option-box {
+    border: 1px solid #212529;
+    border-top: 0px;
+    width: 100%;
+    padding: 16px 0 32 0;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    position: absolute;
+    background-color: #FFFFFF !important;
+    z-index: 999;
+    display: block;
+    overflow: auto;
+    max-height: 200px !important;
+}
+
+.option-box::-webkit-scrollbar {
+    width: 0 !important;
+    background-color: #F5F5F5;
+}
+
+.option-box::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+.option-box::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.option {
+    padding: 16px 24px 16px 24px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #F8F8F8;
+    padding: 16px 24px 16px 24px;
+    cursor: pointer;
+}
+
+
+/* LABEL ======================================= */
+
+.olga-label:read-only {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.olga-label {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.olga-textarea-label {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 16px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.olga-label:disabled {
+    color: #212529;
+    opacity: 30% !important;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 0px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.olga-textarea-label:disabled {
+    color: #9A9A9A;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 0px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.olga-input {
+    outline: none;
+    font-size: 16px;
+    padding-top: 28px !important;
+}
+
+.olga-input::placeholder {
+    font-style: italic;
+    color: #CBCBCB;
+}
+
+.olga-input:focus {
+    outline: none;
+    font-size: 16px;
+    padding-top: 28px !important;
+}
+
+
+/* active state */
+
+.olga-input:focus~.olga-label,
+.olga-input:valid~.olga-label {
+    top: -6px;
+    margin-top: 14px !important;
+    font-size: 10px;
+    color: #9A9A9A;
+    outline: none !important;
+}
+.olga-input:focus~.olga-textarea-label,
+.olga-input:valid~.olga-textarea-label {
+    top: -6px;
+    margin-top: 16px !important;
+    font-size: 10px;
+    color: #9A9A9A;
+    outline: none !important;
+}
+.olga-input:read-only~.filled-select-label,
+.olga-input:valid~.filled-select-label {
+    top: -8px;
+    margin-top: 16px !important;
+    font-size: 10px;
+    color: #9A9A9A;
+    outline: none !important;
+    position: absolute;
+    left: 25px;
+}
+
+.disabled-olga-label {
+    top: -8px;
+    margin-top: 16px !important;
+    font-size: 10px;
+    color: #9A9A9A;
+    outline: none !important;
+    font-style: italic;
+    position: absolute;
+    left: 25px;
+    opacity: 0.4;
+}
+
+.select-label {
+    color: #212529;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+.olga-textarea-input:focus~.olga-textarea-label,
+.olga-textarea-input:valid~.olga-textarea-label {
+    top: -6px;
+    margin-top: 14px !important;
+    font-size: 10px;
+    color: #9A9A9A;
+    outline: none !important;
+}
+
+.olga-select-inpu-label:focus~.olga-label,
+.olga-select-inpu-label:valid~.olga-label {
+    top: -30px !important;
+    margin-top: 14px !important;
+    font-size: 10px;
+    color: #9A9A9A;
+    outline: none !important;
+}
+
+.olga-input:disabled~.olga-label {
+    color: #9A9A9A;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.olga-textarea-input:disabled~.olga-textarea-label {
+    color: #9A9A9A;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 24px;
+    top: 28%;
+    height: 100px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.olga-btn {
+    background: #212529 0% 0% no-repeat padding-box;
+    color: $default-white;
+    border-radius: 28px;
+    opacity: 1;
+    top: 550px;
+    left: 30px;
+    width: 100%;
+    height: 56px;
+    font-weight: 700 !important;
+}
+
+.olga-btn:disabled {
+    height: 56px;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.3);
+    color: $default-white;
+    border: none;
+    touch-action: none;
+    border-radius: 50px;
+    font-weight: 700 !important;
+}
+
+.olga-btn:disabled:hover {
+    height: 56px;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.3);
+    color: $default-white;
+    border: none;
+    touch-action: none;
+    border-radius: 50px;
+    font-weight: 700;;
+}
+
+.olga-btn:hover {
+    height: 56px;
+    width: 100%;
+    background-color: transparent;
+    color: $default-black;
+    border-radius: 50px;
+    border: solid 4px $default-black;
+    font-weight: 700;;
+}
+
+.olga-box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 1px #2125291A;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 24px 24px 40px 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+

@@ -1,0 +1,162 @@
+<div id="form-page">
+  <div class="h-100v container-12 opacited">
+    <div class="h-100v row align-items-center justify-content-center">
+      <div class="h-100v col-8">
+        <div class="row h-100v align-items-center">
+          <div class="col">
+            <strong>
+              <span class="f-48 lh-32 f-white">Renovate your property, relax and collect rent</span>
+            </strong>
+          </div>
+          <div class="col">
+            <div class="exercise-box">
+              <div class="row">
+                <div class="col">
+                  <span class="f-32">Rent form</span>
+                </div>
+              </div>
+              <form>
+                <div class="row pt-32">
+                  <div class="col">
+                    <span class="f-24">Personal information</span>
+                  </div>
+                </div>
+                <div class="row pt-24">
+                  <div class="col">
+                    <label for="" class="default-label">Name</label>
+                    <span class="f-12" *ngIf="saved">{{formData.user.name}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.user.name">
+                  </div>
+                </div>
+                <div class="row pt-16">
+                  <div class="col">
+                    <label for="" class="default-label">Email</label>
+                    <span class="f-12" *ngIf="saved">{{formData.user.email}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="email" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.user.email">
+                  </div>
+                </div>
+                <div class="row pt-16">
+                  <div class="col">
+                    <label for="" class="default-label">Phone number</label>
+                    <span class="f-12" *ngIf="saved">{{formData.user.phoneNumber | mask : '(00) 0 0000 0000'}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="tel" class="tabas-field" mask="(00) 0 0000 0000"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.user.phoneNumber">
+                  </div>
+                </div>
+                <div class="row pt-16">
+                  <div class="col">
+                    <label for="" class="default-label">CPF</label>
+                    <span class="f-12" *ngIf="saved">{{formData.user.document | mask : '000.000.000-00'}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="tel" class="tabas-field" mask="000.000.000-00"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.user.document">
+                  </div>
+                </div>
+                <div class="row pt-32">
+                  <div class="col">
+                    <span class="f-24">Rent timestamp</span>
+                  </div>
+                </div>
+                <div class="row pt-16">
+                  <div class="col">
+                    <label for="" class="default-label">Init date</label>
+                    <span class="f-12" *ngIf="saved">{{formData.timestamp.init | mask : '00/00/0000'}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.timestamp.init" mask="00/00/0000">
+                  </div>
+                  <div class="col">
+                    <label for="" class="default-label">Final date</label>
+                    <span class="f-12" *ngIf="saved">{{formData.timestamp.end | mask : '00/00/0000'}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.timestamp.end" mask="00/00/0000">
+                  </div>
+                </div>
+                <div class="row pt-32">
+                  <div class="col">
+                    <span class="f-24">Rental values</span>
+                  </div>
+                </div>
+                <div class="row pt-16">
+                  <div class="col">
+                    <label for="" class="default-label">Min. value</label>
+                    <span class="f-12" *ngIf="saved">R$ {{formData.rentValues.min | currencyFormat}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.rentValues.min" currencyMask
+                      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+                  </div>
+                  <div class="col">
+                    <label for="" class="default-label">Max. value</label>
+                    <span class="f-12" *ngIf="saved">R$ {{formData.rentValues.max | currencyFormat}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.rentValues.max" currencyMask
+                      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+                  </div>
+                </div>
+                <div class="row pt-32">
+                  <div class="col">
+                    <span class="f-24">Location informations</span>
+                  </div>
+                </div>
+                <div class="row pt-16">
+                  <div class="col">
+                    <label for="" class="default-label">Zip code</label>
+                    <span class="f-12"
+                      *ngIf="saved">{{formData.locationInformation.zipCode | mask : '00000-000'}}</span>
+                    <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                      [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.locationInformation.zipCode"
+                      mask="00000-000" (input)="checkZipCode()">
+                  </div>
+                </div>
+                <div *ngIf="returnedZip">
+                  <div class="row pt-16">
+                    <div class="col">
+                      <label for="" class="default-label">Address</label>
+                      <span class="f-12" *ngIf="saved">{{formData.locationInformation.address}}</span>
+                      <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                        [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.locationInformation.address">
+                    </div>
+                  </div>
+                  <div class="row pt-16">
+                    <div class="col">
+                      <label for="" class="default-label">Neightborhood</label>
+                      <span class="f-12" *ngIf="saved">{{formData.locationInformation.neightborhood}}</span>
+                      <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                        [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.locationInformation.neightborhood">
+                    </div>
+                  </div>
+                  <div class="row pt-16">
+                    <div class="col">
+                      <label for="" class="default-label">City</label>
+                      <span class="f-12" *ngIf="saved">{{formData.locationInformation.city}}</span>
+                      <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                        [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.locationInformation.city">
+                    </div>
+                    <div class="col">
+                      <label for="" class="default-label">State</label>
+                      <span class="f-12" *ngIf="saved">{{formData.locationInformation.state}}</span>
+                      <input *ngIf="!saved" (input)="checkForm()" type="text" class="tabas-field"
+                        [ngModelOptions]="{standalone: true}" [(ngModel)]="formData.locationInformation.state">
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="!saved">
+                  <div class="row pt-48" *ngIf="disabledBtn">
+                    <div class="col">
+                      <button class="btn btn-default" disabled>SAVE</button>
+                    </div>
+                  </div>
+                  <div class="row pt-48" *ngIf="!disabledBtn">
+                    <div class="col">
+                      <button class="btn btn-default" (click)="sendInformation()">SAVE</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+@import '../../shared/scss/mixins';
+
+.maindisplay {
+  background: lightgrey;
+  height: calc(100% / 3);
+  padding: 5% !important;
+  font-size: 4rem;
+  text-align: right;
+  font-family: Courier, monospace;
+  overflow: auto;
+}
+
+.subdisplay {
+  border-bottom: 1px solid black;
+  height: 25%;
+  font-size: 2rem;
+  overflow: auto;
+}
+
+.keypad {
+  height: calc(200% / 3);
+}
+
+.keys {
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  background: whitesmoke;
+  color: black;
+  padding: 5%;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.keys:hover {
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  color: black;
+  padding: 5%;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.14);
+  box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.14);
+}
+
+.one-line {
+  display: inline-block;
+}
